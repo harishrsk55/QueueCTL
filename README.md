@@ -9,7 +9,7 @@
 1. **Clone the repository:**
 
 ```
-git clone <your-repo-url>
+git clone https://github.com/harishrsk55/QueueCTL.git
 cd QueueCTL
 ```
 
