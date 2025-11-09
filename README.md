@@ -175,7 +175,10 @@ dlq retry job2
 status
 ```
 
-4. **Stop workers after testing**
+6. **Stop workers after testing**
 ```
 worker stop
 ```
+
+## Demo Video
+[Google drive link](https://drive.google.com/file/d/1bAxgICy_tgg1EMNAHKOokKy6mZAQuC_v/view?usp=sharing)
