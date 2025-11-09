@@ -148,13 +148,13 @@ pending -> in_progress -> completed
 ## Testing Instructions
 1. **Enqueue sample jobs**
 ```
-queuectl> enqueue '{id: job1, command: "echo test1"}'
-queuectl> enqueue '{id: job2, command: "sleep 5"}'
+enqueue '{id: job1, command: "echo test1"}'
+enqueue '{id: job2, command: "sleep 5"}'
 ```
 
 2. **Start workers**
 ```
-queuectl> worker start --count 2
+worker start --count 2
 ```
 
 3. **Verify job execution**
@@ -164,18 +164,18 @@ queuectl> worker start --count 2
 
 4. **Check status and list**
 ```
-queuectl> status
-queuectl> list --state completed
-queuectl> dlq list
+status
+list --state completed
+dlq list
 ```
 
 5. **Retry DLQ jobs and verify they re-enter the main queue**
 ```
-queuectl> dlq retry job2
-queuectl> status
+dlq retry job2
+status
 ```
 
 4. **Stop workers after testing**
 ```
-queuectl> worker stop
+worker stop
 ```
