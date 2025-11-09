@@ -68,7 +68,7 @@ def worker():
                         j["status"] = "completed"
                         j["updated_at"] = time.time()
                         # Remove completed job from queue
-                        jobs = [x for x in jobs if x["id"] != j["id"]]
+                        #jobs = [x for x in jobs if x["id"] != j["id"]]
                     else:
                         j["attempts"] += 1
                         j["updated_at"] = time.time()
@@ -125,3 +125,4 @@ def stop_workers(args):
             print(f"Worker PID {pid} not found (already stopped).")
     os.remove(worker_pids_file)
     print("All workers stopped.")
+
