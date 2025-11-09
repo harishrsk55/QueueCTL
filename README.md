@@ -18,12 +18,7 @@ cd QueueCTL
 pip install -r requirements.txt
 ```
 
-3. **Ensure the data/ folder exists**
-```
-mkdir -p data
-```
-
-4. **Run the QueueCTL shell**
+3. **Run the QueueCTL shell**
 ```
 python queuectl.py
 ```
